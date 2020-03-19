@@ -1,0 +1,338 @@
+@import "./style.css";
+
+/* About */
+
+.about article span, .detail_information article span{
+    font-size: 20px;
+    font-family: 'Segoe UI';
+    color: #1b64ae;
+    -webkit-transform: translate(0, 5px);
+    -o-transform: translate(0, 5px);
+    -moz-transform: translate(0, 5px);
+    -ms-transform: translate(0, 5px); /* IE 9 */
+    transform: translate(0, 5px); /* Standard syntax */
+}
+
+.about article h6, .about article span, .detail_information article span,
+.detail_information article h3{
+    display: inline-block;
+}
+
+.about article h6{
+    margin-bottom: 0;
+}
+
+/*Information*/
+.detail_information article h3 a, .detail_information article span, .our_business_container,
+.our_business_container a{
+    color: #F4F4F4;
+}
+
+.our_business_container a{
+    font-weight: bold;
+}
+
+.detail_information article ul{
+    list-style-type: none;
+    padding-left: 5%;
+}
+
+.detail_information article ul li div img{
+
+    border-radius: 30px;
+}
+
+.our_business_container ul img{
+    width: 14%;
+}
+
+.our_business_container{
+    background: url("../images/small/9.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+.our_business_container ul{
+    margin-top: 0;
+}
+/*Latest News*/
+
+.news_relate span, .news_relate h2{
+    display: inline-block;
+}
+
+.news_relate span{
+    font-size: 20px;
+    font-family: 'Segoe UI';
+    color: #1b64ae;
+    -webkit-transform: translate(0, 5px);
+    -o-transform: translate(0, 5px);
+    -moz-transform: translate(0, 5px);
+    -ms-transform: translate(0, 5px); /* IE 9 */
+    transform: translate(0, 5px); /* Standard syntax */
+}
+
+.news_relate h2{
+    margin-bottom: 0;
+}
+
+.news_relate h3{
+    font-size: 40px;
+    margin-top: 10px;
+}
+
+.news_relate a{
+    color: black;
+}
+
+.news_relate .title{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.news_relate .content{
+    font-size: 22px;
+}
+
+.news_relate .read_more{
+    font-size:17px;
+    font-weight: bold;
+}
+
+.news_relate .read_more::after{
+    content: "";
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background: url(../images/icon/next.png) no-repeat 0 0;
+    position: relative;
+    top:22px;
+    left:10px;
+}
+
+/*contact*/
+
+.contact span, .contact h2{
+    display: inline-block;
+}
+
+.contact span{
+    font-size: 20px;
+    font-family: 'Segoe UI';
+    color: #1b64ae;
+    -webkit-transform: translate(0, 5px);
+    -o-transform: translate(0, 5px);
+    -moz-transform: translate(0, 5px);
+    -ms-transform: translate(0, 5px); /* IE 9 */
+    transform: translate(0, 5px); /* Standard syntax */
+}
+.contact p{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/*For mobile phones: */
+@media only screen and (max-width: 575px){
+    /*About */
+    .about article span, .about article h6{
+        transform: translate(0, -10px);
+    }
+
+    .about{
+        margin: 20px 0;
+    }
+
+    .about article  p :first-child{
+        font-size: 20px;
+    }
+
+    /*News*/
+
+    .content_container .grid{
+        margin: 40px 0;
+        border: 1px solid #6d7973;
+    }
+
+    /* Information*/
+    .detail_information 
+        .image_container
+        {
+            margin-top: 100px;
+        }
+    
+    .image_container>div:first-child{
+        font-size: 0;
+    }
+
+    .our_business_container .title span, .our_business_container .title h3{
+        display: inline-block;
+    }
+
+    .our_business_container img{
+        border-radius: 60px;
+        width: 15vw;
+        display: block;
+        margin: auto;
+    }
+
+    .our_business_container div{
+        text-align: center;
+        font-size: 22px;
+    }
+
+    /*Contact*/
+
+    .contact input{
+        margin: 15px 0;
+        padding: 20px 0;
+        border: none;
+        border-radius: 10px;
+    }
+
+    .contact textarea{
+        margin: 15px 0;
+        padding: 20px 0;
+        border: none;
+    }
+
+    #submit{
+        width: 50%;
+        position: relative;
+        left: 25%;
+        margin: 20px 0;
+        background: #ffb947;
+        color: #f5f5f5;
+        font-size: 20px;
+    }
+}
+
+/*For small tablets: */
+@media only screen and (min-width: 576px){
+    /*Detail_information*/
+
+    .image_container > div:first-child{
+        font-size: 0;
+    }
+    .our_business_container article img{
+        width: 100%;
+        border-radius: 50px;
+        display: block;
+        position: relative;
+        left:30%;
+    }
+
+    .our_business_container .title h3, .our_business_container .title span{
+        position: relative;
+        left: 10%;
+    }
+
+    /*News Relate*/
+    .news_relate{
+        margin: 40px 0;
+    }
+
+    .news_relate h3{
+        margin: 0;
+    }
+
+    .grid{
+        padding: 27px;
+    }
+
+    .grid img{
+        display: block;
+        height: 160px;
+    }
+
+    .grid{
+        background: 1px solid #ffa500;
+    }
+
+    .grid:nth-child(1) .title,
+    .grid:nth-child(2) .title{
+        height: 140px;
+    }
+
+    .grid .title{
+        font-size: 27px;
+    }
+
+    .grid .content{
+        font-size: 17px;
+    }
+
+    .grid .row{
+        display: table;
+        border: 1px solid #6d7973;
+    }
+
+    /*Contact*/
+    
+    .contact p{
+        margin-top: 0;
+    }
+
+    .contact input[type="text"]{
+        padding: 15px 0;
+    }
+
+    .contact input,
+    .contact textarea{
+        border: none;
+        margin: 15px 0;
+    }
+
+    .contact input[type="submit"]{
+        padding: 15px 0;
+        display: block;
+        margin: 10px 0;
+        position: relative;
+        left: 25%;
+        width: 50%;
+        background-color: #ffb947;
+    }
+}
+
+/*For laptop desktop*/
+@media only screen and (min-width: 992px){
+     /*About*/
+
+     .about{
+        padding: 0 10%;
+    }
+
+    /*Information*/
+
+    .image_container{
+        display: table;
+    }
+
+    .image_container > div{
+        float: none;
+        display: table-cell;
+        width: 50%;
+        vertical-align: top;
+    }
+
+    .our_business_container article > div .row > div{
+        margin: 3% 0;
+    }
+
+    .our_business_container article > div .row > div:first-child{
+        position: relative;
+    }
+
+    .our_business_container article img{
+        display: block;
+        position: relative;
+        width: 100%;
+        left: -50%;
+    }
+
+    /*Contact*/
+
+    .contact > div:first-child input[type="submit"]{
+        display: block;
+        position: relative;
+        left: 75%;
+    }
+}

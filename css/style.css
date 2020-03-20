@@ -57,7 +57,6 @@ img{
     border-bottom: 1px solid #ffa500;
 }
 
-
 .copyright{
     color: #F4F4F4;
     padding-bottom: 10px;
@@ -339,6 +338,11 @@ footer hr{
 
     img{
         width: 100%;
+    }
+    
+    /*about*/
+    .about{
+        margin: 20px 0;
     }
 
     /*Footer*/

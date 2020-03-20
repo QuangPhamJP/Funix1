@@ -1,0 +1,79 @@
+@import "./style.css";
+
+.contact span, h2{
+    text-align: center;
+}
+h2{
+    margin:0;
+}
+
+label{
+    display: block;
+    margin: 10px 0 5px 0;
+}
+.contact span{
+    display: block;
+    font-size: 20px;
+    font-family: 'Segoe UI';
+    color: #1b64ae;
+    margin-bottom: 20px;
+    -webkit-transform: translate(0, 5px);
+    -o-transform: translate(0, 5px);
+    -moz-transform: translate(0, 5px);
+    -ms-transform: translate(0, 5px); /* IE 9 */
+    transform: translate(0, 5px); /* Standard syntax */
+}
+
+.contact input[type="text"]{
+    padding: 10px;
+}
+
+input, textarea{
+    margin: 20px 0;
+    border-radius: 6px;
+}
+
+.contact input[type="submit"]{
+    background:  #ffb947;
+    padding: 6px;
+    float: right;
+}
+
+@media only screen and (max-width: 575px){
+  
+}
+
+@media only screen and (min-width: 576px){
+    .contact > div:first-child{
+        padding: 20px 20px;
+    }
+
+    input, label, textarea{
+        margin:10px 0;
+    }
+
+    
+    label::before{
+        content: ".";
+        font-weight: bold; 
+        font-size: 40px;
+        line-height: 0px;
+    }
+
+}
+
+@media only screen and (min-width: 992px){
+    .contact input[type="submit"]{
+        width: 25%;
+        background:  #ffb947;
+        padding: 6px;
+        float: right;
+    }
+
+    label::before{
+        content: ".";
+        font-weight: bold; 
+        font-size: 40px;
+        line-height: 0px;
+    }
+}

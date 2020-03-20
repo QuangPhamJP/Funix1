@@ -1,0 +1,36 @@
+@import "./style_home.css";
+
+.news_posts{
+    margin: 20px 0;
+}
+
+.news_posts .row > div:first-child{
+    font-size: 0;
+}
+
+.news_posts p{
+    margin: 0;
+    padding-left: 10%;
+    font-size: 4vw;
+    font-weight: bold;
+}
+
+.news_posts .row{
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #b3ae9a;
+}
+
+.news_posts .row > div img{
+    height: 100px;
+    width: 100%;
+}
+
+.news_posts h2{
+    padding: 2%;
+    background-color: #0959c7 ;
+    color: #f5f5f5;
+    text-align: center;
+}
+
+

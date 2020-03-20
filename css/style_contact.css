@@ -1,6 +1,6 @@
 @import "./style.css";
 
-.contact span, h2{
+.contact span, .contact h2{
     text-align: center;
 }
 h2{

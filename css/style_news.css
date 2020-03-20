@@ -11,7 +11,7 @@
 .news_posts p{
     margin: 0;
     padding-left: 10%;
-    font-size: 4vw;
+    font-size: 20px;
     font-weight: bold;
 }
 
@@ -33,16 +33,6 @@
     text-align: center;
 }
 
-@media only screen and (max-width: 575px){
-    .news_relate img{
-        width: 100%;
-    }
-}
-
-@media only screen and (min-width: 576px){
-
-}
-
 @media only screen and (min-width: 992px){
     .news_posts p{
         font-size: 16px;
@@ -54,7 +44,7 @@
     }
 
     .news_posts h2{
-        margin: 0;
+        margin: 0 0 20px 0;
     }
 }
 
